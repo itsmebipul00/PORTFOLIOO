@@ -1,0 +1,171 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: .9rem;
+}
+
+body{
+    margin: 0;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 300;
+    text-align: center;
+}
+
+.container{
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 0 2em;
+}
+
+.potrait{
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+}
+
+h1,
+h2 {
+    font-weight: 300; 
+}
+
+h1 {
+    font-size: 3.75rem;
+    margin-top: 0;
+}
+
+h2 {
+    font-size: 2.625rem;
+    margin-top: 2em;
+    border-top: solid 1px #c4c4c4;
+    border-bottom: solid 1px #c4c4c4;
+    /* 2.625 x 16 = 42 */
+    /* 20 / 42 */
+    padding: .5em 0;
+    margin-bottom: .5em;
+    text-align: center;
+}
+
+h3 {
+    font-size: 2.25rem;
+    font-weight: 900;
+    margin-bottom: 0;
+}
+
+.about-me{
+    padding-top: 0;
+}
+
+.navigation{
+    letter-spacing: 1;
+    border-top: 20px solid burlywood;
+    margin-top: 0;
+}
+
+.navigation a{
+    font-size: 1.5em;
+    margin: 1em;
+    padding: 0.5em;
+    color: black
+}
+
+.accent-text {
+    display: block;
+}
+
+h1 .accent-text {
+    font-size: 5rem;
+}
+
+h2 .accent-text {
+    font-size: 3.75rem;
+}
+
+.accent-text,
+.name,
+time {
+    font-weight: 900;
+    color: #99D930;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+a {
+    color: #99D930;
+    font-weight: 900;
+    transition: 400ms;
+}
+
+a:hover,
+a:focus {
+    color: #dd2f2f;
+}
+
+.small-text {
+    font-size: 1rem;
+    margin-top: .3125em;
+} 
+
+img {
+    max-width: 100%;
+}
+
+
+header {
+    padding: 3.25em 0;
+}
+
+header {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.neog{
+    margin-top: 2em;
+}
+
+.inverse {
+    color: #fff;
+    background: #252525;
+}
+
+
+.btn {
+    display: inline-block;
+    color: #252525;
+    text-decoration: none;
+    background: #99D930;
+    padding: .625em 1.5625em;
+    margin-top: 1.5625em;
+}
+
+.btn:hover,
+.btn:focus {
+    background: #252525;
+    color: #fff;
+}
+
+.btn-neog{
+    margin-top: 0.7em;
+}
+
+.portfolio{
+    background: gainsboro;
+    margin-top: 5em;
+    padding: 1em;
+}
+
+.connect-me{
+    margin-bottom: 0.5em;
+}
+
+.svg{
+    margin: 1em;
+    padding: 0.5em;
+}
+
