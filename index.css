@@ -58,14 +58,13 @@ h3 {
 }
 
 .navigation{
-    letter-spacing: 1;
     border-top: 20px solid burlywood;
     margin-top: 0;
 }
 
 .navigation a{
-    font-size: 1.5em;
-    margin: 1em;
+    font-size: 1rem;
+    margin-right: 0.5em;
     padding: 0.5em;
     color: black
 }
@@ -96,7 +95,7 @@ p {
 a {
     color: #99D930;
     font-weight: 900;
-    transition: 400ms;
+    transition: 500ms;
 }
 
 a:hover,
@@ -125,8 +124,26 @@ header {
     text-align: center;
 }
 
+.neog-projects{
+    display: flex;
+    flex-direction: column;
+}
+
+
 .neog{
     margin-top: 2em;
+}
+
+.github-projects a{
+    border-radius: 100%;
+    background: #ffffff;
+    padding: 5em;
+    font-size: 1em;
+}
+
+.github-projects a:hover,
+.github-projects a:focus{
+    background-image: url(https://bit.ly/3DgVmou);
 }
 
 .inverse {
@@ -169,3 +186,33 @@ header {
     padding: 0.5em;
 }
 
+
+@media(min-width: 850px){
+    .container{
+        max-width: 1000px;
+    }
+    .con-articles{
+        max-width: 720px;
+    }
+   .neog-projects{
+        flex-direction: row;
+        justify-content: space-between;
+    } 
+    .neog{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30%;
+        background: #f7f7f7;
+        padding: 1.5em 3em;
+        border-radius: 10px;
+    }
+    .github-projects a{
+        background: #f7f7f7;
+    }
+    .navigation a{
+        font-size: 2rem;
+        letter-spacing: 1px;
+        margin-right: 2em;
+    }
+}
