@@ -2,6 +2,19 @@
     box-sizing: border-box;
 }
 
+:root{
+    --colorOne: black;
+    --colorTwo: white;
+    --colorThree: rgb(250, 250, 250);
+
+}
+
+.dark-theme{
+    --colorOne: white; 
+    --colorTwo: black;
+    --colorThree: #252525;
+}
+
 html{
     font-size: .9rem;
 }
@@ -11,12 +24,22 @@ body{
     font-family: 'Roboto',sans-serif;
     font-weight: 300;
     text-align: center;
+    color: var(--colorOne);
+    background: var(--colorTwo);
 }
 
 .container{
     max-width: 780px;
     margin: 0 auto;
     padding: 0 2em;
+}
+
+.moon-icon{
+    width: 40px;
+    position: absolute;
+    top: 5%;
+    right: 3%;
+    cursor: pointer;
 }
 
 .potrait{
@@ -66,7 +89,7 @@ h3 {
     font-size: 1rem;
     margin-right: 0.5em;
     padding: 0.5em;
-    color: black
+    color: var(--colorOne);
 }
 
 .accent-text {
@@ -127,16 +150,28 @@ header {
 .neog-projects{
     display: flex;
     flex-direction: column;
+    color: var(--colorTwo);
 }
 
 
 .neog{
     margin-top: 2em;
+    padding: 1.5em 3em;
+    color: var(--colorOne);
+    background: var(--colorThree);
+    border-radius: 10px;
+    transform: scale(1);
+    transition: transform 500ms;
+}
+
+.neog:hover{
+    cursor: pointer;
+    transform: scale(1.1);
 }
 
 .github-projects a{
     border-radius: 100%;
-    background: #ffffff;
+    background: var(--colorOne);
     padding: 5em;
     font-size: 1em;
 }
@@ -147,14 +182,14 @@ header {
 }
 
 .inverse {
-    color: #fff;
-    background: #252525;
+    color: var(--colorOne);
+    background: var(--colorThree);
 }
 
 
 .btn {
     display: inline-block;
-    color: #252525;
+    color: var(--colorThree);
     text-decoration: none;
     background: #99D930;
     padding: .625em 1.5625em;
@@ -163,8 +198,8 @@ header {
 
 .btn:hover,
 .btn:focus {
-    background: #252525;
-    color: #fff;
+    background: var(--colorThree);
+    color: var(--colorOne);
 }
 
 .btn-neog{
@@ -172,7 +207,7 @@ header {
 }
 
 .portfolio{
-    background: gainsboro;
+    background: var(--colorThree);
     margin-top: 5em;
     padding: 1em;
 }
@@ -203,12 +238,10 @@ header {
         flex-direction: column;
         justify-content: space-between;
         width: 30%;
-        background: #f7f7f7;
         padding: 1.5em 3em;
-        border-radius: 10px;
     }
     .github-projects a{
-        background: #f7f7f7;
+        background: var(--colorOne);
     }
     .navigation a{
         font-size: 2rem;
