@@ -1,4 +1,4 @@
-let icon= document.querySelector('.moon-icon')
+let icon= document.querySelector('.theme')
 
 
 if(localStorage.getItem('theme')==null){

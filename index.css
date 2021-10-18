@@ -9,11 +9,11 @@
 
 }
 
-.dark-theme{
+/* .dark-theme{
     --colorOne: white; 
-    --colorTwo: black;
-    --colorThree: #252525;
-}
+    --colorTwo: #252525;
+    --colorThree: black;
+} */
 
 html{
     font-size: .9rem;
@@ -25,22 +25,22 @@ body{
     font-weight: 300;
     text-align: center;
     color: var(--colorOne);
-    background: var(--colorTwo);
+    background: var(--colorThree);
 }
 
 .container{
     max-width: 780px;
     margin: 0 auto;
-    padding: 0 2em;
+    /* padding: 0 2em; */
 }
 
-.moon-icon{
+/* .moon-icon{
     width: 40px;
     position: absolute;
     top: 5%;
     right: 3%;
     cursor: pointer;
-}
+} */
 
 .potrait{
     border-radius: 50%;
@@ -81,7 +81,8 @@ h3 {
 }
 
 .navigation{
-    border-top: 20px solid burlywood;
+    border-top: 10px solid burlywood;
+
     margin-top: 0;
 }
 
@@ -147,6 +148,11 @@ header {
     text-align: center;
 }
 
+.splitter{
+    margin-top: 0;
+    background: var(--colorTwo);
+}
+
 .neog-projects{
     display: flex;
     flex-direction: column;
@@ -158,7 +164,7 @@ header {
     margin-top: 2em;
     padding: 1.5em 3em;
     color: var(--colorOne);
-    background: var(--colorThree);
+    background: var(--colorTwo);
     border-radius: 10px;
     transform: scale(1);
     transition: transform 500ms;
@@ -207,8 +213,7 @@ header {
 }
 
 .portfolio{
-    background: var(--colorThree);
-    margin-top: 5em;
+    background: var(--colorTwo);
     padding: 1em;
 }
 
