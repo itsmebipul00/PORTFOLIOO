@@ -159,7 +159,7 @@ header {
     color: var(--colorTwo);
 }
 
-.articles{
+.articles, .about-me{
     margin-bottom: 2em;
 }
 
