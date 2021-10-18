@@ -159,6 +159,9 @@ header {
     color: var(--colorTwo);
 }
 
+.articles{
+    margin-bottom: 2em;
+}
 
 .neog{
     margin-top: 2em;
